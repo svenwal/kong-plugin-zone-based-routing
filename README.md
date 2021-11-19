@@ -50,9 +50,9 @@ curl -X POST http://localhost:8001/services/my-service-on-azure/routes \
   --data 'paths[]=/myRoute' \
   --data 'headers[].X-Kong-Zone[]=aws-europe1azure-us-east'
 
-curl -X POST http://localhost:8001/services/my-service-on-azure/routes \
+curl -X POST http://localhost:8001/services/my-service-on-whatever-default/routes \
   --data "name=zone-based-routing-default" \
-  --data 'paths[]=/myRoute' \
+  --data 'paths[]=/myRoute'
   ```
 
  
