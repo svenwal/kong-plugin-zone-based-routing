@@ -1,6 +1,6 @@
 # Zone based routing plugin for Kong
 
-Note: if you don't want or can't install a custom plugin have a look at the [serverless]<serverless> folder in this repository.
+Note: if you don't want or can't install a custom plugin have a look at the `serverless` folder in this repository.
 
 ## What it does
 
