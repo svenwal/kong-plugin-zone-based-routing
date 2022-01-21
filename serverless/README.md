@@ -11,4 +11,4 @@ curl -i -X POST http://localhost:8001/plugins -F name=pre-function -F "config.re
 ````
 
 **IMPORTANT NOTE:** the serverless plugin by default runs in a sandbox Lua environment. Because of this access to `os.getenv` is not allowed on a node.
-In order to invoke this function you need to set [untrusted_lua](https://docs.konghq.com/gateway/2.6.x/reference/configuration/#untrusted_lua) to `off` (or specify to only enable this `os.` function as desribed in the following paragraphs in the documentation)
+In order to invoke this function you need to set [untrusted_lua](https://docs.konghq.com/gateway/2.6.x/reference/configuration/#untrusted_lua) to `on` (or specify to only enable this `os.` function as desribed in the following paragraphs in the documentation)
